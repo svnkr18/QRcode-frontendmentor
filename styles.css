@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light_gray: hsl(212, 45%, 89%);
+  --Grayish_blue: hsl(220, 15%, 55%);
+  --Dark_blue: hsl(218, 44%, 22%);
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+main {
+  width: 1440px;
+  height: 800px;
+  margin: auto;
+  background-color: var(--Light_gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+}
+.card {
+  width: 319px;
+  height: 496px;
+  background-color: var(--White);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 15px;
+  box-shadow: 1px 6px 12px -3px rgba(112, 134, 158, 0.73);
+}
+.card img {
+  margin-top: 15px;
+  border-radius: 10px;
+}
+.description {
+  text-align: center;
+  margin: 0px 25px 40px 25px;
+}
+#heading {
+  color: var(--Dark_blue);
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+.description p {
+  color: var(--Grayish_blue);
+  font-size: 15px;
+  font-weight: 400;
+}
+@media screen and (max-width: 375px) {
+  main {
+    width: 375px;
+    height: 667px;
+  }
+}
